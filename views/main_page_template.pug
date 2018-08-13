@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    title="Main page"
+    style
+        include ../css/main.css
+  body
+    div.container_form
+        form(action='http://localhost:3000/log_in' method='GET')
+          p
+            label.label.login(for='login') <b>LOGIN</b>
+            input#login.input_login(type='text' name='login')
+          p
+            label.label.password(for='password') <b>PASSWORD</b>
+            input#password.input_password(type='password' name='password')
+          button.button(type='submit' value='SEND') <b>SEND</b>
+    div.container_information
+        p.information <b>Login:</b> <i>admin</i>
+        p.information <b>Password:</b> <i>admin</i>
+        
