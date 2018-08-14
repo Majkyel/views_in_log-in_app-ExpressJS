@@ -6,7 +6,7 @@ html(lang='en')
         include ../css/main.css
   body
     div.container_form
-        form(action='http://localhost:3000/log_in' method='GET')
+        form(action='/log_in' method='GET')
           p
             label.label.login(for='login') <b>LOGIN</b>
             input#login.input_login(type='text' name='login')
