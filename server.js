@@ -1,5 +1,5 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', './views');
@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/log_in', function(req, res) {
-    let data = {
+    const data = {
         login: req.query.login,
         password: req.query.password
     }
